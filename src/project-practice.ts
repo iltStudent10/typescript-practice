@@ -15,3 +15,7 @@ interface Order {
     products: Product[];
     total: number;
 }
+
+function filterByProperty<T, K extends keyof T>(objects: T[], key: K, value: T[K]): T[] {
+    return objects.filter(obj => obj[key] === value);
+}
