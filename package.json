@@ -6,8 +6,11 @@
   "scripts": {
     "build": "tsc",
     "build:esm": "tsc -p tsconfig.esm.json",
+    "build:react": "vite build --config vite.config.react.ts",
     "watch": "tsc --watch",
     "watch:esm": "tsc -p tsconfig.esm.json --watch",
+    "dev:react": "vite --config vite.config.react.ts",
+    "preview:react": "vite preview --config vite.config.react.ts",
     "start": "node dist/practice.js",
     "start:functions": "node dist/functions-generics.js",
     "start:esm": "node dist-esm/main.mjs",
@@ -27,6 +30,12 @@
   },
   "homepage": "https://github.com/iltStudent10/typescript-practice#readme",
   "devDependencies": {
-    "typescript": "^6.0.3"
+    "@vitejs/plugin-react": "^5.1.0",
+    "typescript": "^6.0.3",
+    "vite": "^7.2.0"
+  },
+  "dependencies": {
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0"
   }
 }

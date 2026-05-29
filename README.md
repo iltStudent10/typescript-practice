@@ -124,3 +124,20 @@ Note: error practice files are excluded from normal `npm run build` so your main
 - `npm run start:esm` → Runs `dist-esm/main.mjs`
 - `npm run check:errors` → Type-checks only `src/errors.ts` (expects errors)
 - `npm run check:generics-errors` → Type-checks only `src/generics-errors.ts` (expects errors)
+
+## React + Vite Practice (Isolated)
+
+This repo now includes a minimal React + Vite app in the `web/` folder, separate from the TypeScript Node practice modules.
+
+Files:
+
+- `web/index.html`
+- `web/src/main.jsx`
+- `web/src/App.jsx`
+- `vite.config.react.ts`
+
+Commands:
+
+- `npm run dev:react` → Start Vite dev server
+- `npm run build:react` → Build React app to `web/dist`
+- `npm run preview:react` → Preview production build
