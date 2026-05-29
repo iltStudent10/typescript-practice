@@ -5,10 +5,14 @@
   "main": "dist/practice.js",
   "scripts": {
     "build": "tsc",
+    "build:esm": "tsc -p tsconfig.esm.json",
     "watch": "tsc --watch",
+    "watch:esm": "tsc -p tsconfig.esm.json --watch",
     "start": "node dist/practice.js",
     "start:functions": "node dist/functions-generics.js",
-    "check:errors": "tsc -p tsconfig.errors.json --noEmit"
+    "start:esm": "node dist-esm/main.mjs",
+    "check:errors": "tsc -p tsconfig.errors.json --noEmit",
+    "check:generics-errors": "tsc -p tsconfig.generics-errors.json --noEmit"
   },
   "repository": {
     "type": "git",
