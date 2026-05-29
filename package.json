@@ -1,0 +1,26 @@
+{
+  "name": "typescript-practice",
+  "version": "1.0.0",
+  "description": "Typescript Practice",
+  "main": "dist/practice.js",
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc --watch",
+    "start": "node dist/practice.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iltStudent10/typescript-practice.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/iltStudent10/typescript-practice/issues"
+  },
+  "homepage": "https://github.com/iltStudent10/typescript-practice#readme",
+  "devDependencies": {
+    "typescript": "^6.0.3"
+  }
+}
