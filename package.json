@@ -6,7 +6,8 @@
   "scripts": {
     "build": "tsc",
     "watch": "tsc --watch",
-    "start": "node dist/practice.js"
+    "start": "node dist/practice.js",
+    "check:errors": "tsc -p tsconfig.errors.json --noEmit"
   },
   "repository": {
     "type": "git",
